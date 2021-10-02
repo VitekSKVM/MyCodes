@@ -21,5 +21,11 @@ public class task2 {
         int rub = (a*n)+(cop/100);
         cop = cop%100;
         System.out.printf("%d %d",rub,cop); 
+        ************************** Дано целое положительное число N. Выведите следующее за ним четное число.
+            При решении этой задачи нельзя использовать условную инструкцию if и циклы.*************
+             Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        x = (x+1) + (x+1)%2;
+         System.out.println(x);
     }
 }
