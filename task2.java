@@ -40,7 +40,6 @@ public class task2 {
         int n2 = (x/10)%10;
         int n3 = x/100;
         System.out.println(n1+n2+n3);
-}
-}
+
     }
 }
