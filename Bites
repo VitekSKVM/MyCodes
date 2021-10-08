@@ -1,0 +1,12 @@
+Напишите программу, которая обнуляет заданное количество последних бит числа.
+import java.util.Scanner;
+
+public class task2 {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt(), i = in.nextInt();
+        System.out.println(x & (-(1 << i)));
+    }
+}
+
+***************************************************
