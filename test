@@ -1,0 +1,159 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int result = 0;
+        String check;
+        check = "Enter Secret code (password)";
+        System.out.print(check + ": ");
+        String Wans= in.nextLine();
+        System.out.println("Password is incorrect, try another");
+        System.out.println("hint: where was first kiss");
+        String Rans = in.nextLine();
+        System.out.println("Authorization completed successfully");
+                System.out.println("Initializing of program start  ");
+                System.out.println("Program has been successfully started ");
+                System.out.println("Choose language ");
+        System.out.println(" 1) Russian");
+        System.out.println(" 2) Chinese");
+        System.out.println(" 3) French");
+        System.out.println(" 4) Italian");
+        System.out.print("Insert number: ");
+        int lan = in.nextInt();
+        if(lan == 1){
+            System.out.println("Язык изменен на Русский ");
+            System.out.println("Язык изменен на Русский ");
+        }else if(lan == 2){
+            System.out.println("какой китайский ты че блин кароче язык всеравно Русский ");
+            System.out.println("Язык изменен на Русский ");
+        }else if(lan== 3){
+            System.out.println("Ага.. кокой фрацузский ты же его не знаешь, все равно будет Русский");
+            System.out.println("Язык изменен на Русский ");
+        }else if(lan == 4){
+            System.out.println("Угу.. Итальянского не будет, аллах так сказал, но есть Русский) ");
+            System.out.println("Язык изменен на Русский ");
+        }else{
+            System.out.println("Русский так русский ");
+            System.out.println("Язык изменен на Русский ");
+        }
+        System.out.println("******************************************* ");
+        System.out.println("******************************************* ");
+        System.out.println("******************************************* ");
+        System.out.println("Вы Алексанадра Отсроумова? ");
+        System.out.println(" 1) Да");
+        System.out.println(" 2) Нет");
+        System.out.println(" 3) А кто спрашивает?");
+        int check1 = in.nextInt();
+        if(check1==1){
+            System.out.println("Все проверки пройдены успешно");
+        }else if(check1==2){
+            System.out.println("Пидора ответ");
+        }else if(check1==3){
+            System.out.println("Петров Виктор Андреевич, а что?");
+        }else{
+            System.out.println("Ты задолбала нажимать то, что нельзя емае у тебя есть варианты только 1,2 и 3 а ты что мать твою пишешь?");
+        }
+        System.out.println("Ладно идем дальше");
+        System.out.println("Переходим непосредственно к вопросам");
+        System.out.println("                   ");
+        System.out.println("Вопрос 1: ");
+        System.out.println("Как называется любимая видеогра Витька?");
+        System.out.println(" 1) Arex Legend");
+        System.out.println(" 2) Apex fighters");
+        System.out.println(" 3) Apex Legends");
+        System.out.println(" 4) Апекс леджендс");
+        int q1 = in.nextInt();
+        if(q1==3){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 2: ");
+        System.out.println("Какой предмет дается Вите хуже всех? ");
+        System.out.println(" 1) Литература");
+        System.out.println(" 2) Математика");
+        System.out.println(" 3) География");
+        System.out.println(" 4) Физика");
+        int q2 = in.nextInt();
+        if(q2==1){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 3: ");
+        System.out.println("Кто был нарисован на той самой футболке на озере?");
+        System.out.println(" 1) Моргенштерн");
+        System.out.println(" 2) Оби Ван Кеноби");
+        System.out.println(" 3) Дарт Вейдео");
+        System.out.println(" 4) Джеймс Бонд");
+        int q3 = in.nextInt();
+        if(q3==4){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 4: ");
+        System.out.println("С какой стороны нужно идти, когда идешь рядом с Витей?");
+        System.out.println(" 1) Слева");
+        System.out.println(" 2) Справа");
+        System.out.println(" 3) Спереди");
+        System.out.println(" 4) Сзади");
+        int q4 = in.nextInt();
+        if(q4==2){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 5: ");
+        System.out.println("Какая из этих книг не моя любимая ");
+        System.out.println(" 1) Бегущий в лабиринте ");
+        System.out.println(" 2) Метро 2033");
+        System.out.println(" 3) Игра эндера");
+        System.out.println(" 4) 5 волна");
+        int q5 = in.nextInt();
+        if(q5==4){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 6: ");
+        System.out.println("На каком языке Витя сейчас программирует");
+        System.out.println(" 1) Java");
+        System.out.println(" 2) C++");
+        System.out.println(" 3) Python");
+        System.out.println(" 4) pascal");
+        int q6 = in.nextInt();
+        if(q6==1){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 7: ");
+        System.out.println("Любит ли Витя Сашу Остроумову?");
+        System.out.println(" 1) Да");
+        System.out.println(" 2) Пизда");
+        System.out.println(" 3) Да");
+        System.out.println(" 4) Да");
+        int q7 = in.nextInt();
+            result++;
+        System.out.println("                   ");
+        System.out.println("Вопрос 8: ");
+        System.out.println("Когда день рожденье у Вити?");
+        System.out.println(" 1) 9 марта");
+        System.out.println(" 2) 15 марта");
+        System.out.println(" 3) 10 марта");
+        System.out.println(" 4) 22 июня");
+        int q8 = in.nextInt();
+        if(q8==3){
+            result++;
+        };
+        System.out.println("                   ");
+        System.out.println("Вопрос 9: ");
+        System.out.println("");
+        System.out.println(" 1) Литература");
+        System.out.println(" 2) Математика");
+        System.out.println(" 3) География");
+        System.out.println(" 4) Физика");
+        int q9 = in.nextInt();
+        if(q9==1){
+            result++;
+        };
+
+
+    }
+}
