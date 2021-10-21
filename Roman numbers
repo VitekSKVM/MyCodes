@@ -1,0 +1,65 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class lesson {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in).useLocale(Locale.US);
+        float a = in.nextFloat();
+        int c =0;
+        String ans = "";
+           while(a>0) {
+               if(a==100){ans="C";break;}
+               if(a==99){ans="XCIX";break;}
+               if(a==98){ans="XCVIII";break;}
+               if(a==97){ans="XCVII";break;}
+               if(a==96){ans="XCVI";break;}
+               if(a==95){ans="XCV";break;}
+               if(a==94){ans="XCIV";break;}
+               if(a==93){ans="XCIII";break;}
+               if(a==92){ans="XCII";break;}
+               if(a==91){ans="XCI";break;}
+               if(a==90){ans="XC";break;}
+
+               if(a==40){ans="XL";break;}
+               if(a==41){ans="XLI";break;}
+               if(a==42){ans="XLII";break;}
+               if(a==43){ans="XLIII";break;}
+               if(a==44){ans="XLIV";break;}
+               if(a==45){ans="XLV";break;}
+               if(a==46){ans="XLVI";break;}
+               if(a==47){ans="XLVII";break;}
+               if(a==48){ans="XLVIII";break;}
+               if(a==49){ans="XLIX";break;}
+               if(a==50){ans="L";break;}
+               int b =0;
+            if (a > 50) {
+                ans = "L";
+                a = a - 50;
+            }
+            int d =0;
+            while (a >= 10) {
+                ans = ans + "X";
+                a = a - 10;
+            }
+            if (a == 9) {
+                ans = ans + "IX";
+                a = a - 9;
+            }
+            int e =0;
+            if (a > 4) {
+                ans = ans + "V";
+                a = a - 5;
+            }
+            if (a == 4) {
+                ans = ans + "IV";
+                a = a - 4;
+            }
+            if(a<4 & a>0){
+                  ans=ans+"I";
+                  a=a-1;
+                }
+            }
+          System.out.println(ans);
+        }
+    }
+
