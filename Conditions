@@ -72,3 +72,41 @@ public class lesson {
         }
     }
   
+8) Определите тип треугольника (остроугольный, тупоугольный, прямоугольный) с данными сторонами.
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class lesson {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in).useLocale(Locale.US);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        String ans ="";
+          if(a>=b & a>=c){
+               if(a>=b+c)ans="impossible";
+              else if(a*a==b*b+c*c)ans="right";
+              else if(a*a<=b*b+c*c)ans="acute";
+              else if(a*a>=b*b+c*c)ans="obtuse";
+
+          }
+        if(b>=a & b>=c){
+             if(b>=a+c)ans="impossible";
+           else if(b*b==a*a+c*c)ans="right";
+            else if(b*b<=a*a+c*c)ans="acute";
+            else if(b*b>=a*a+c*c)ans="obtuse";
+            else if(b<a+c)ans="impossible";
+        }
+        if(c>=b & c>=a){
+             if(c>=b+a)ans="impossible";
+            else if(c*c==b*b+a*a)ans="right";
+            else if(c*c<=b*b+a*a)ans="acute";
+            else if(c*c>=b*b+a*a)ans="obtuse";
+            else if(c<b+a)ans="impossible";
+        }
+
+         System.out.println(ans);
+
+        }
+    }
