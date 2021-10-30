@@ -1,0 +1,73 @@
+1) Оргкомитет Московской городской олимпиады решил организовать обзорную экскурсию по Москве для участников олимпиады.
+   Для этого был заказан двухэтажный автобус (участников олимпиады достаточно много и в обычный они не умещаются) высотой 437 сантиметров.
+   На экскурсионном маршруте встречаются N мостов. Жюри и оргкомитет олимпиады очень обеспокоены тем, что высокий двухэтажный автобус может не проехать под одним из них.
+   Им удалось выяснить точную высоту каждого из мостов. Автобус может проехать под мостом тогда и только тогда, когда высота моста превосходит высоту автобуса.
+   Помогите организаторам узнать, закончится ли экскурсия благополучно, а если нет, то установить, где произойдет авария.
+
+
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class lesson {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in).useLocale(Locale.US);
+        int n = in.nextInt();
+        int b = 0;
+        String ans ="No crash";
+        while(n!=0){
+            b++;
+            int a = in.nextInt();
+            if(a<438){
+                ans = "Crash " + b;
+                break;
+            }
+            n--;
+            }
+        System.out.println(ans);
+        }
+        }
+        
+        
+2) Дано два целых числа A и B. Найдите произведение данных чисел, не используя операцию умножения. Учтите, что числа могут быть отрицательными.
+
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class lesson {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in).useLocale(Locale.US);
+        int a = in.nextInt(), b = in.nextInt();
+        int ans = 0;
+        int c = 0;
+        int d = 0;
+        if(a<0 & b>=0) {
+            c = -a;
+            for (int i = 0; i < b; i++) {
+                ans = ans + c;
+            }
+            ans = -ans;
+        }
+        if(a<0 & b<0) {
+            c = -a;
+            d = -b;
+            for (int i = 0; i < d; i++) {
+                ans = ans + c;
+            }
+        }
+        if(a>=0 & b<0) {
+            d = -b;
+            for (int i = 0; i < d; i++) {
+                ans = ans + a;
+            }
+            ans = -ans;
+        }
+        if(a>=0 & b>=0) {
+            for (int i = 0; i < b; i++) {
+                ans = ans + a;
+            }
+        }
+        System.out.println(ans);
+    }
+}
